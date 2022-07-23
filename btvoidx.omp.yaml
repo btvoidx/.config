@@ -22,6 +22,7 @@ blocks:
       - type: path
         style: plain
         foreground: "#C792EA"
+        template: "{{ .Path }}"
         properties:
           style: full
           folder_icon: ""
