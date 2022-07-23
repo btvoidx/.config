@@ -1,0 +1,48 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json
+
+version: 2
+console_title_template: "{{.Folder}}{{if .Root}} :: root{{end}} :: {{.Shell}}"
+
+transient_prompt:
+  background: "transparent"
+  foreground: "#777777"
+  template: "\n> "
+
+blocks:
+  # First line left part
+  - type: prompt
+    alignment: left
+    segments:
+      - type: git
+        style: plain
+        foreground: "#C792EA"
+        template: "{{ .UpstreamIcon }}{{ .HEAD }}"
+
+      - type: path
+        style: plain
+        foreground: "#C792EA"
+        properties:
+          style: full
+          folder_icon: ""
+
+  # First line right part
+  - type: prompt
+    alignment: right
+    segments:
+      - type: executiontime
+        style: plain
+        foreground: "#777777"
+
+      - type: time
+        style: plain
+        template: "{{ .CurrentDate | date .Format }}"
+        properties:
+          time_format: "15:04"
+
+  - type: prompt
+    alignment: left
+    newline: true
+    segments:
+      - type: text
+        style: plain
+        template: "> "
