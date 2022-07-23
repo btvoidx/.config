@@ -6,12 +6,13 @@ console_title_template: "{{.Folder}}{{if .Root}} :: root{{end}} :: {{.Shell}}"
 transient_prompt:
   background: "transparent"
   foreground: "#777777"
-  template: "\n> "
+  template: "\n\n> "
 
 blocks:
   # First line left part
   - type: prompt
     alignment: left
+    newline: true
     segments:
       - type: git
         style: plain
