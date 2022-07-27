@@ -14,11 +14,6 @@ blocks:
     alignment: left
     newline: true
     segments:
-      - type: git
-        style: plain
-        foreground: "#C792EA"
-        template: "{{ .UpstreamIcon }}{{ .HEAD }}"
-
       - type: path
         style: plain
         foreground: "#C792EA"
@@ -26,6 +21,10 @@ blocks:
         properties:
           style: full
           folder_icon: ""
+
+      - type: git
+        style: plain
+        template: " on <#C792EA>{{ .UpstreamIcon }}{{ .HEAD }}</>"
 
   # First line right part
   - type: prompt
