@@ -34,11 +34,11 @@ blocks:
         style: plain
         foreground: "#777777"
 
-      - type: time
-        style: plain
-        template: "{{ .CurrentDate | date .Format }}"
-        properties:
-          time_format: "15:04"
+      # - type: time
+      #   style: plain
+      #   template: "{{ .CurrentDate | date .Format }}"
+      #   properties:
+      #     time_format: "15:04"
 
   - type: prompt
     alignment: left
