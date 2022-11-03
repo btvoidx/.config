@@ -24,7 +24,9 @@ blocks:
 
       - type: git
         style: plain
-        template: " on <#C792EA>{{ .UpstreamIcon }}{{ .HEAD }}</>"
+        template: " on <#C792EA>{{ .HEAD }}</>"
+        properties:
+          branch_icon: ""
 
   # First line right part
   - type: prompt
