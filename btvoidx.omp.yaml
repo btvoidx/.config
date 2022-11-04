@@ -16,7 +16,7 @@ blocks:
     segments:
       - type: path
         style: plain
-        foreground: "#C792EA"
+        foreground: "#b597d9"
         template: "{{ .Path }}"
         properties:
           style: full
@@ -24,7 +24,7 @@ blocks:
 
       - type: git
         style: plain
-        template: " on <#C792EA>{{ .HEAD }}</>"
+        template: " on <#b597d9>{{ .HEAD }}</>"
         properties:
           branch_icon: ""
 
