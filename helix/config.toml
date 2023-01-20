@@ -1,4 +1,4 @@
-theme = "rose_pine"
+theme = "custom"
 
 [editor]
 scrolloff = 10
@@ -7,14 +7,17 @@ cursorline = true
 color-modes = true
 mouse = true
 idle-timeout = 0
+bufferline = "always"
+auto-save = true
 
 [editor.cursor-shape]
 insert = "bar"
 normal = "block"
-
 
 [editor.file-picker]
 hidden = false
 
 [keys.normal]
 esc = ["collapse_selection", "keep_primary_selection"]
+"C-e" = ":sh explorer.exe . | exit 0"
+space = { w = ":update", q = ":bc" }
