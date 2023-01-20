@@ -3,7 +3,7 @@ theme = "custom"
 [editor]
 scrolloff = 10
 line-number = "relative"
-cursorline = true
+# cursorline = true
 color-modes = true
 mouse = true
 idle-timeout = 0
