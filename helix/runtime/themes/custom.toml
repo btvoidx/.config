@@ -1,3 +1,4 @@
 inherits = "rose_pine_moon"
 
-"ui.background" = { fg = "white"}
+"ui.background" = {}
+"ui.statusline" = {}
