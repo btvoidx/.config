@@ -19,5 +19,4 @@ hidden = false
 
 [keys.normal]
 esc = ["collapse_selection", "keep_primary_selection"]
-"C-e" = ":sh explorer.exe . | exit 0"
-space = { w = ":update", q = ":bc" }
+space = { w = ":update", q = ":bc", e = ":sh explorer.exe . | exit 0" }
