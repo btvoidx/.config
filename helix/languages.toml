@@ -1,8 +1,3 @@
-
 [[language]]
 name = "go"
-config = { gofumpt = true, staticcheck = true, analyses = { unusedvariable = true, unusedwrite = true, useany = true, nilness = true } }
-
-[[language]]
-name = "astro"
-language-server = { command = "astro-ls", args = ["--stdio"] }
+config = { gofumpt = true, staticcheck = true, analyses = { unusedvariable = true, unusedwrite = true, useany = true, nilness = true }, hints = { parameterNames = true } }
